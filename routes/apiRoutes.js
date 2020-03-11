@@ -1,13 +1,13 @@
-const path = require("path");
+const tables = require("../data/tables")
 module.exports = function(app) {
-    app.get("/", (req, res) => {
-        res.sendFile(path.join(__dirname, "../public/home.html"));
+    app.get("/api/tables", (req, res) => {
+        console.log(tables);
+        res.json(tables);
     });
-    
-    app.get("/table", (req, res) => {
-        res.sendFile(path.join(__dirname, "../public/table.html"));
-    });
-    app.get("/reserve", (req, res) => {
-        res.sendFile(path.join(__dirname, "../public/reserve.html"));
+    app.post("/api/tables", (req, res) => {
+        const newTable = req.body;
+        console.log(newTable);
+        tables.push(newTable);
+        return res.json(newTable);
     });
 }
