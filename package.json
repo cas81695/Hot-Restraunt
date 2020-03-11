@@ -1,0 +1,23 @@
+{
+  "name": "hot-restraunt",
+  "version": "1.0.0",
+  "description": "an app that allows user to make reservations",
+  "main": "home.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cas81695/Hot-Restraunt.git"
+  },
+  "author": "cas81695",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cas81695/Hot-Restraunt/issues"
+  },
+  "homepage": "https://github.com/cas81695/Hot-Restraunt#readme"
+}
